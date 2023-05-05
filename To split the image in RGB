@@ -1,0 +1,9 @@
+import cv2
+
+pic = cv2.imread("/content/WhatsApp Image 2023-01-10 at 8.54.30 PM.jpeg")
+(B, G, R) = cv2.split(pic)
+from google.colab.patches import cv2_imshow
+cv2.imwrite('result3.jpg', pic)
+cv2.waitKey(0)
+cv2.waitKey(0) 
+cv2.destroyAllWindows()  
